@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#0b0905">
+
+    <title>AI Prompt Builder Pro v2.1</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- ============================= -->
+        <!-- HEADER -->
+        <!-- ============================= -->
+
+        <header class="app-header">
+
+            <div class="crown-icon">♛</div>
+
+            <h1>AI Prompt Builder Pro</h1>
+
+            <div class="version">
+                VERSION 2.1
+            </div>
+
+            <div class="developer">
+
+                <span class="status-dot"></span>
+
+                <span>Developer : fatur62</span>
+
+            </div>
+
+            <p class="subtitle">
+                Professional AI Music Prompt Generator
+            </p>
+
+        </header>
+
+
+        <!-- ============================= -->
+        <!-- MAIN -->
+        <!-- ============================= -->
+
+        <main>
+
+
+            <!-- GENRE -->
+
+            <section class="card">
+
+                <div class="section-title">
+
+                    <span class="icon">🎵</span>
+
+                    <span>Music Genre</span>
+
+                </div>
+
+                <select id="genre">
+
+                    <!-- genre.js akan mengisi otomatis -->
+
+                </select>
+
+            </section>
+
+
+            <!-- MOOD -->
+
+            <section class="card">
+
+                <div class="section-title">
+
+                    <span class="icon">✨</span>
+
+                    <span>Mood & Emotion</span>
+
+                </div>
+
+                <select id="mood">
+
+                    <!-- mood.js -->
+
+                </select>
+
+            </section>
+
+
+            <!-- INSTRUMENT -->
+
+            <section class="card">
+
+                <div class="section-title">
+
+                    <span class="icon">🎸</span>
+
+                    <span>Musical Instruments</span>
+
+                </div>
+
+                <p class="helper">
+                    Select one or more instruments
+                </p>
+
+                <div id="instrumentList"
+                     class="instrument-grid">
+
+                    <!-- instrument.js -->
+
+                </div>
+
+            </section>
+
+
+            <!-- SOUND -->
+
+            <section class="card">
+
+                <div class="section-title">
+
+                    <span class="icon">🔊</span>
+
+                    <span>Sound Character</span>
+
+                </div>
+
+                <select id="sound">
+
+                    <!-- sound.js -->
+
+                </select>
+
+            </section>
+
+
+            <!-- VOCAL -->
+
+            <section class="card">
+
+                <div class="section-title">
+
+                    <span class="icon">🎤</span>
+
+                    <span>Vocal Style</span>
+
+                </div>
+
+                <select id="vocal">
+
+                    <!-- vocal.js -->
+
+                </select>
+
+            </section>
+
+
+            <!-- BPM -->
+
+            <section class="card">
+
+                <div class="section-title">
+
+                    <span class="icon">🥁</span>
+
+                    <span>Tempo / BPM</span>
+
+                </div>
+
+                <select id="bpm">
+
+                    <!-- bpm.js -->
+
+                </select>
+
+            </section>
+
+
+            <!-- GENERATOR -->
+
+            <section class="generator-card">
+
+                <button id="generateBtn"
+                        class="generate-btn">
+
+                    <span>⚡</span>
+
+                    GENERATE AI PROMPT
+
+                </button>
+
+            </section>
+
+
+            <!-- RESULT -->
+
+            <section class="result-card">
+
+                <div class="result-header">
+
+                    <div>
+
+                        <span class="result-icon">
+                            ✨
+                        </span>
+
+                        <span>
+                            Generated Prompt
+                        </span>
+
+                    </div>
+
+                    <div id="counter"
+                         class="counter">
+
+                        0 / 1000 characters
+
+                    </div>
+
+                </div>
+
+
+                <textarea
+                    id="result"
+                    placeholder="Your professional AI music prompt will appear here..."
+                    spellcheck="false">
+                </textarea>
+
+
+                <div class="action-buttons">
+
+                    <button id="copyBtn"
+                            class="action-btn">
+
+                        📋 Copy
+
+                    </button>
+
+
+                    <button id="clearBtn"
+                            class="action-btn">
+
+                        🗑 Clear
+
+                    </button>
+
+
+                    <button id="exportBtn"
+                            class="action-btn">
+
+                        💾 Export
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- ============================= -->
+        <!-- FOOTER -->
+        <!-- ============================= -->
+
+        <footer>
+
+            <div class="footer-line"></div>
+
+            <p>
+                AI Prompt Builder Pro
+                <span>•</span>
+                v2.1
+            </p>
+
+            <small>
+                Crafted by fatur62
+            </small>
+
+        </footer>
+
+    </div>
+
+
+    <!-- ============================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================= -->
+
+    <script src="js/genre.js"></script>
+
+    <script src="js/instrument.js"></script>
+
+    <script src="js/mood.js"></script>
+
+    <script src="js/sound.js"></script>
+
+    <script src="js/vocal.js"></script>
+
+    <script src="js/bpm.js"></script>
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
